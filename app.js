@@ -56,7 +56,7 @@ app.use('/api', limiter);
 
 // webhook checkout - stripe
 app.post('/webhook-checkout',
-    express.raw({ type: 'application/json' }),
+    bodyParser.raw({ type: 'application/json' }),
     bookingController.webhookCheckout);
 
 // body parser, reading data from the req.body
