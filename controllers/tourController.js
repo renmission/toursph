@@ -100,7 +100,7 @@ exports.getTourStats = catchAsync(async(req, res, next) => {
 
     res.status(200).json({
         status: 'success',
-        count: stats.length,
+        results: stats.length,
         data: stats
     })
 
@@ -141,7 +141,7 @@ exports.getMonthlyPlan = catchAsync(async(req, res, next) => {
 
     res.status(200).json({
         status: 'success',
-        count: plan.length,
+        results: plan.length,
         data: plan
     })
 
@@ -169,7 +169,7 @@ exports.getTourWithin = catchAsync(async(req, res, next) => {
 
     res.status(200).json({
         status: 'success',
-        count: tours.length,
+        results: tours.length,
         data: {
             data: tours
         }
