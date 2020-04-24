@@ -30,7 +30,7 @@ const DBOptions = {
 // DB
 mongoose
     .connect(DB, DBOptions)
-    .then(() => console.log(`DB Connected on ${DB}`));
+    .then(() => console.log(`DB Connected Successfully`));
 
 
 const port = process.env.PORT || 3000;
