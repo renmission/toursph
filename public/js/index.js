@@ -4,6 +4,8 @@ import { displayMap } from './mapbox';
 import { updateSettings } from './updateSettings';
 import { bookTour } from './stripe';
 import { createReview } from './reviews';
+import { showAlert } from './alerts';
+
 
 // DOM ELEMENTS
 const mapbox = document.getElementById('map');
@@ -82,3 +84,6 @@ if (reviewForm)
         const review = document.getElementById('review').value;
         createReview(rating, review);
     });
+
+const alertMessage = document.querySelector('body').dataset.alert;
+if (alert) showAlert('success', alertMessage, 20);
