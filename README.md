@@ -1,4 +1,4 @@
-# Natours Application
+# ToursPH Application
 
 Built using mordern technologies:
  - Node.js
