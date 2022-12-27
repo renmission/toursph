@@ -1,7 +1,7 @@
 {
   "name": "toursph",
   "version": "1.0.0",
-  "description": "Learning node, express and mongoDB",
+  "description": "Learning node, express and mongoDB with PUG",
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
